@@ -8,6 +8,7 @@ table {
 
 td {
     border: 1px solid darkgray;
+    border-radius: 10px;
     width: 10px;
     height: 10px;
 }
