@@ -14,9 +14,9 @@ NOTES:
 ## Plan
 - Build the grid and grid cells => DONE
 - Add onclick cell functionality => DONE
-- Setup current and next arrays. Current array is set by clicking each cell before calling the start of the function 
-- Manage evolution count and apply rules
-- Update the interface
-- Add player controls
-- Test
+- Setup current and next arrays. Current array is set by clicking each cell before calling the start of the function => DONE
+- Manage evolution count and apply rules => DONE
+- Update the interface => DONE
+- Add player controls => DONE
+- Test => DONE
 - Go for stretch goals
