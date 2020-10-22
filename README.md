@@ -1,9 +1,7 @@
 # Conway's Game of Life - BWPT15
 ## Understand
 In the Game of Life each cell and it's surrounding 8 cells are exmained using the following rules:
-
     1. If the cell is alive and has 2 or 3 neighbors, then it remains alive. Else it dies.
-
     2. If the cell is dead and has exactly 3 neighbors, then it comes to life. Else if remains dead.
 
 NOTES:
@@ -19,4 +17,4 @@ NOTES:
 - Update the interface => DONE
 - Add player controls => DONE
 - Test => DONE
-- Go for stretch goals
+- Go for stretch goals 

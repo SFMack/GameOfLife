@@ -1,6 +1,6 @@
 // for the grid
-const rows = 50;
-const cols = 50;
+let rows = 30;
+let cols = 30;
 let currentGeneration = [rows];
 let nextGeneration = [rows];
 
@@ -135,7 +135,7 @@ function newNextGeneration() {
         }
       } else if (currentGeneration[row][col] == 0) {
         // If dead or empty
-        if (neighbors == 3) {
+        if (neighbors >= 3) {
           // Propogate the species
           nextGeneration[row][col] = 1;
         }
@@ -192,6 +192,8 @@ function updateUI() {
     timer = setTimeout(updateUI, reproductionSpeed);
   }
 }
+
+function changeCellColor() {}
 
 function reset() {
   location.reload();

@@ -7,6 +7,11 @@
     <title>John Conway's Game of Life</title>
 </head>
 <body>
+    <header>
+        <h1>Game of Life</h1>
+        <h3>A visual representation of cellular automata</h3>
+        
+    </header>
 
     <div id="gameGrid">
 
@@ -15,7 +20,12 @@
     <div>
         <input type="button" id='startStopButton' value='Start' onclick="startStop();">
         <input type="button" id='btnreset' value='Reset' onclick="reset();">
+        <input type="button" id='changeCellColor' value='Change Cell Color' onclick="changeCellColor();">
     </div>
+    
+    <section>
+        <h2>About The Game of Life</h2>
+    </section>
 
 <!-- Scripts -->
 <script src="index.js"></script>
