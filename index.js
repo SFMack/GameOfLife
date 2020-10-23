@@ -201,6 +201,11 @@ function stepThrough() {
   updateUI();
 }
 
+function changeSpeed() {
+  reproductionSpeed = 100;
+  startStop();
+}
+
 function reset() {
   location.reload();
 }
