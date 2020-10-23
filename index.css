@@ -20,3 +20,7 @@ td.dead {
 td.alive {
     background-color: green;
 }
+
+td.red {
+    background-color: red;
+}

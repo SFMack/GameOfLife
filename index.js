@@ -3,6 +3,7 @@ let rows = 30;
 let cols = 30;
 let currentGeneration = [rows];
 let nextGeneration = [rows];
+let generationCount = 0;
 
 // for start button
 let started = false;
@@ -135,7 +136,7 @@ function newNextGeneration() {
         }
       } else if (currentGeneration[row][col] == 0) {
         // If dead or empty
-        if (neighbors >= 3) {
+        if (neighbors == 3) {
           // Propogate the species
           nextGeneration[row][col] = 1;
         }
@@ -167,6 +168,9 @@ function updateGame() {
       }
     }
   }
+
+  generationCount++;
+  console.log(generationCount);
 }
 
 function startStop() {
@@ -193,7 +197,9 @@ function updateUI() {
   }
 }
 
-function changeCellColor() {}
+function stepThrough() {
+  updateUI();
+}
 
 function reset() {
   location.reload();
