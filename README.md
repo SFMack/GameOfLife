@@ -18,3 +18,6 @@ NOTES:
 - Add player controls => DONE
 - Test => DONE
 - Go for stretch goals 
+
+Deployed project:
+https://game-of-life-omega-six.vercel.app/
