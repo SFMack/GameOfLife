@@ -9,24 +9,44 @@
 <body>
     <header>
         <h1>Game of Life</h1>
-        <h3>A visual representation of cellular automata</h3>
-        
     </header>
-
-    <div id="gameGrid">
-
-    </div>
-
-    <div>
-        <input type="button" id='startStopButton' value='Start' onclick="startStop();">
-        <input type="button" id='btnreset' value='Reset' onclick="reset();">
-        <input type="button" id='stepThrough' value='Manual Iteration' onclick="stepThrough();">
-        <input type="button" id='changeSpeed' value='TLDR' onclick="changeSpeed();">
-    </div>
+    <main>
+        <section id="main-left">
+            <div id="gameGrid">
     
-    <section>
-        <h2>About The Game of Life</h2>
-    </section>
+            </div>
+            <div>
+                <input type="button" id='startStopButton' value='Start' onclick="startStop();">
+                <input type="button" id='btnreset' value='Reset' onclick="reset();">
+                <input type="button" id='stepThrough' value='Manual Iteration' onclick="stepThrough();">
+                <input type="button" id='changeSpeed' value='GO FAST' onclick="changeSpeed();">
+            </div>
+        </section>
+       
+        
+        <section id="main-right">
+            <h2>Rules</h2>
+            <p>
+                The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead, (or populated and unpopulated, respectively). Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:<br />
+            </p>
+            <p>
+                Any live cell with fewer than two live neighbours dies, as if by underpopulation.<br />
+                Any live cell with two or three live neighbours lives on to the next generation.<br />
+                Any live cell with more than three live neighbours dies, as if by overpopulation.<br />
+                Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.<br />
+            </p>
+            <p>These rules, which compare the behavior of the automaton to real life, can be translated into the following:</p>
+            <p>
+                Any live cell with two or three live neighbours survives.<br />
+                Any dead cell with three live neighbours becomes a live cell.<br />
+                All other live cells die in the next generation, and all dead cells stay dead.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">More info about John Conway's Game of Life</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>An original project created by Christian Mack of Lambda School</p>
+    </footer>
+    
 
 <!-- Scripts -->
 <script src="index.js"></script>
