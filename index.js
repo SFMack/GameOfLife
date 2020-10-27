@@ -10,6 +10,10 @@ let started = false;
 let timer;
 let reproductionSpeed = 1000;
 
+let genCount = document.createElement("p");
+let mainLeft = document.querySelector("#main-left");
+mainLeft.appendChild(genCount);
+
 // creates two-dimensional array
 function createArrays() {
   for (let i = 0; i < rows; i++) {
@@ -169,8 +173,9 @@ function updateGame() {
     }
   }
 
+  // generation counter
   generationCount++;
-  console.log(generationCount);
+  genCount.innerHTML = generationCount;
 }
 
 function startStop() {
